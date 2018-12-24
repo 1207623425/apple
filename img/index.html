@@ -115,7 +115,7 @@
 		Heart.prototype.draw = function(){
 			ctx.save();
 			ctx.globalAlpha = this.opacity;
-			ctx.drawImage(heartImage, this.x, this.y, this.width, this.height);
+			ctx.drawImage( this.x, this.y, this.width, this.height);
 			ctx.scale(this.scale + 1, this.scale + 1);
   			if(!this.type){
   				// 设置文字属性
